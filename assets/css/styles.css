@@ -1,0 +1,442 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Hind', sans-serif;
+  font-size: 16px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.subtitle h2 {
+  margin-top: 32px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 14px;
+  }
+
+
+}
+
+/* Header */
+
+
+header {
+  width: 100%;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+  display: inline-flex;
+}
+
+header .title {
+  font-size: 32px;
+  font-weight: 700;
+  height: 32px;
+}
+
+header .title2 {
+  color: gray;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .title, .title2 {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+  display: flex;
+  background-color: lightgray;
+  height: auto;
+  width: 100%;
+
+}
+
+.jumbotron .left {
+
+  display: block;
+  height: auto;
+  position: relative;
+  width: 60%;
+  text-align: center;
+  margin: 32px 24px;
+}
+
+.jumbotron img {
+  width: 100%;
+height: auto;
+
+
+}
+
+.start {
+  display: flex;
+flex-direction: column;
+width: 40%;
+padding-left: 2rem;
+text-align: center;
+
+}
+
+.jumbotron span {
+  display: block;
+ position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 70%;
+  padding-left: 24px;
+  line-height: 2.5rem;
+  font-weight: 700;
+
+
+}
+
+.jumbotron h2 {
+  font-size: 2.5rem;
+}
+
+.jumbotron h4 {
+  font-size: 1.5rem;
+}
+
+.jumbotron .button {
+  background-color: gray;
+  color: white;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+  .jumbotron {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+
+  }
+
+  .jumbotron img {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .jumbotron .left {
+    width: 100%;
+    text-align: center;
+        margin: 0;
+  }
+
+
+  .jumbotron .start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .jumbotron span {
+    display: block;
+   position: relative;
+   top: 0;
+   transform: none;
+   width: 100%;
+    padding: 2rem 1rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+
+  }
+
+  .jumbotron h2 {
+    font-size: 2rem;
+  }
+
+  .jumbotron h4 {
+    font-size: 1.2rem;
+  }
+
+  .jumbotron .button {
+    background-color: gray;
+    text-align: center;
+    color: white;
+    width: 40%;
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+} /* end responsive*/
+
+/* Learn More about our campus */
+
+.learnmore {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+  justify-content: center;
+}
+
+/* Testimonials (left) */
+
+.testimonials {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 60%;
+  text-align: center;
+    margin: 32px 24px;
+
+}
+
+
+.testimonials img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonials h2 {
+  margin-top: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.testimonials h4 {
+  padding: 1.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.testimonials p {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Campus details (right) */
+
+
+.learnmore .info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 40%;
+}
+
+.orientation, .locations, .events {
+  display: flex;
+  align-items: center;
+}
+
+.info img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.info .details {
+  width: 65%;
+}
+
+.details p {
+  margin: 8px 0;
+  color: grey;
+  font-size: 18px;
+}
+
+.details h3 {
+  font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.details {
+  line-height: 1.5;
+}
+
+
+
+/* Courses List */
+
+
+
+/* Thesis Presentations */
+
+
+.presentations {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* Featured (left) */
+
+.featured {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 60%;
+  text-align: center;
+    margin: 32px 24px;
+
+}
+
+
+.featured img {
+  width: 100%;
+  height: auto;
+}
+
+.featured h2 {
+  margin-top: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.featured h4 {
+  padding: 1.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.featured p {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Thesis (right) */
+
+
+.presentations .thesis {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 40%;
+}
+
+
+.thesis img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.thesis .thesis-details {
+  width: 65%;
+}
+
+.thesis-details p {
+  margin: 8px 0;
+  color: grey;
+  font-size: 18px;
+}
+
+.thesis-details h3 {
+  font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.thesis-details {
+  line-height: 1.5;
+}
