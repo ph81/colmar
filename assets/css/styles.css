@@ -355,7 +355,116 @@ text-align: center;
 
 /* Courses List */
 
+.categories-list {
+  display: flex;
+  background-color: #e6e6e6;
+  width: 100%;
+}
 
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  width: 100%;
+  margin-right: 72px;
+  margin-left: 72px;
+    background-color: #e6e6e6;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.courses .subtitle {
+  padding: 32px;
+}
+
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+  background-color: #e6e6e6;
+  flex-grow: 1;
+  flex-basis: 25%;
+  display: flex;
+
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+}
+
+
+.category-courses {
+  margin-top: auto;
+  background-color: white;
+  text-align: left;
+  width: 100%;
+}
+
+.category-courses p {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: grey;
+
+}
+
+.category-courses h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+
+}
+
+.courses-responsive {
+  display: none;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 760px) {
+
+  .courses {
+    display: none;
+  }
+
+  .courses-responsive {
+    display: block;
+    width: 100%;
+
+  }
+
+  .courses-responsive .subtitle {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+
+.category-responsive {
+  padding-top: 8px;
+      background-color: gray;
+      text-align: center;
+}
+  .category-responsive h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+  }
+
+
+
+}
+
+
+/*
+@media (max-width: 960px) {
+  .category-card {
+    flex: 1 30%;
+  }
+}
 
 /* Thesis Presentations */
 
