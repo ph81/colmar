@@ -326,6 +326,10 @@ text-align: center;
   align-items: center;
 }
 
+.orientation-mobile, .campus-mobile, .events-mobile {
+  display: none;
+}
+
 .info img {
   width: 35%;
   height: auto;
@@ -352,6 +356,50 @@ text-align: center;
 }
 
 
+@media only screen and (max-width: 760px) {
+
+  .testimonials {
+    display: none;
+  }
+
+  .learnmore .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .orientation, .locations, .events {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .orientation-desktop, .campus-desktop, .events-desktop {
+    display: none;
+  }
+
+
+  .orientation-mobile, .campus-mobile, .events-mobile {
+    display: inline-block;
+  }
+
+  .info img {
+    width: 100%;
+    height: auto;
+    margin: 16px;
+  }
+
+  .info .details {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+}
+
 
 /* Courses List */
 
@@ -359,6 +407,7 @@ text-align: center;
   display: flex;
   background-color: #e6e6e6;
   width: 100%;
+  padding-bottom: 1.5rem;
 }
 
 
@@ -367,8 +416,7 @@ text-align: center;
   flex-flow: row wrap;
   height: auto;
   width: 100%;
-  margin-right: 72px;
-  margin-left: 72px;
+  margin: 32px 72px;
     background-color: #e6e6e6;
   justify-content: center;
   align-items: center;
@@ -383,6 +431,8 @@ text-align: center;
 .category-card {
   display: flex;
   flex-direction: column;
+  height: 276px;
+width: 280px;
   margin: 32px;
   background-color: #e6e6e6;
   flex-grow: 1;
@@ -398,23 +448,34 @@ text-align: center;
 
 
 .category-courses {
-  margin-top: auto;
   background-color: white;
   text-align: left;
   width: 100%;
+  height: auto;
+  margin: 0;
+padding: 0;
+}
+
+.category-courses span {
+  display: inline-block;
+  margin: 0 0 0.5rem 1rem;
+  color: rgb(52,89,97);
 }
 
 .category-courses p {
-  padding: 8px 0;
   font-size: 1rem;
   color: grey;
-
+  margin-bottom: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+/*  margin: 0 0 1.5rem 1rem; */
 }
 
 .category-courses h3 {
   font-weight: bold;
   font-size: 1.2rem;
-
+  margin: 0.9rem 0rem 0.5rem 1rem;
+padding: 0;
 }
 
 .courses-responsive {
@@ -424,6 +485,10 @@ text-align: center;
 /* Responsive */
 
 @media only screen and (max-width: 760px) {
+
+  .categories-list {
+    display: none;
+  }
 
   .courses {
     display: none;
@@ -438,33 +503,26 @@ text-align: center;
   .courses-responsive .subtitle {
     margin-top: 32px;
     margin-bottom: 16px;
+
   }
 
 
 .category-responsive {
-  padding-top: 8px;
-      background-color: gray;
-      text-align: center;
+      background-color: lightgray;
+      text-align: left;
+      margin: 16px;
+
 }
   .category-responsive h3 {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.375rem;
     padding-top: 16px;
     padding-left: 16px;
     padding-bottom: 24px;
+
   }
 
 
-
-}
-
-
-/*
-@media (max-width: 960px) {
-  .category-card {
-    flex: 1 30%;
-  }
-}
 
 /* Thesis Presentations */
 
@@ -548,4 +606,82 @@ text-align: center;
 
 .thesis-details {
   line-height: 1.5;
+}
+
+.featured-responsive {
+  display: none;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 760px) {
+
+  .featured, .thesis, .thesis-details, .item {
+    display: none;
+  }
+
+  .featured-responsive {
+    display: block;
+    height: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+      margin-top: 16px;
+      margin-bottom: 24px;
+
+  }
+
+  .featured-responsive img {
+    width: 100%;
+    height: auto;
+  }
+
+
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 24px 32px 16px;
+  border-top: 1px solid gray;
+  padding-top: 16px;
+}
+
+footer .copyright {
+  margin-right: auto;
+}
+
+footer .terms {
+  justify-content: flex-end;
+}
+
+footer a {
+  padding: .5rem;
+}
+
+/*Responsive */
+
+@media only screen and (max-width: 760px) {
+
+  footer {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 32px 0;
+    border-top: 1px solid gray;
+    padding-top: 16px;
+  }
+
+  footer .copyright {
+    margin: auto;
+  }
+
+  footer .terms {
+    display: none;
+  }
+
+
+
 }
