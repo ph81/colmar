@@ -51,6 +51,16 @@ a {
   }
 
 
+  @media only screen and (max-width: 760px) {
+      body {
+          overflow-x: hidden !important;
+      }
+      .container {
+          max-width: 100% !important;
+          overflow-x: hidden !important;
+      }
+  }
+
 }
 
 /* Header */
@@ -202,6 +212,7 @@ text-align: center;
   margin: 0.5rem auto;
   font-size: 1.5rem;
   font-weight: 600;
+  border-radius: 20px;
 }
 
 
@@ -319,12 +330,20 @@ text-align: center;
   flex-direction: column;
   margin-top: 16px;
   width: 40%;
+
 }
 
 .orientation, .locations, .events {
   display: flex;
   align-items: center;
+  border-left: 1px #d8d8d8 solid;
 }
+
+.orientation, .locations {
+  border-bottom: 1px #d8d8d8 solid;
+}
+
+
 
 .orientation-mobile, .campus-mobile, .events-mobile {
   display: none;
@@ -367,7 +386,7 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
-    width: 100%;
+    width: 95%;
   }
 
   .orientation, .locations, .events {
@@ -375,6 +394,15 @@ text-align: center;
     flex-direction: column;
   }
 
+.orientation, .locations {
+  border: 0;
+}
+
+.events {
+  border-left: 0;
+  border-bottom: 1px #d8d8d8 solid;
+  padding-bottom: 32px;
+}
 
   .orientation-desktop, .campus-desktop, .events-desktop {
     display: none;
@@ -383,6 +411,7 @@ text-align: center;
 
   .orientation-mobile, .campus-mobile, .events-mobile {
     display: inline-block;
+    justify-content: center;
   }
 
   .info img {
@@ -395,6 +424,8 @@ text-align: center;
     width: 100%;
     text-align: center;
   }
+
+
 
 
 
@@ -509,16 +540,15 @@ padding: 0;
 
 .category-responsive {
       background-color: lightgray;
-      text-align: left;
-      margin: 16px;
+      text-align: center;
+      margin: 10px auto;
 
 }
   .category-responsive h3 {
     font-weight: bold;
-    font-size: 1.375rem;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-bottom: 24px;
+    font-size: 1.5rem;
+    padding: 1.2rem 0 24px 1rem;
+
 
   }
 
@@ -550,7 +580,7 @@ padding: 0;
 }
 
 
-.featured img {
+.featured video {
   width: 100%;
   height: auto;
 }
@@ -631,9 +661,9 @@ padding: 0;
 
   }
 
-  .featured-responsive img {
-    width: 100%;
-    height: auto;
+  .featured-responsive video {
+    width: 95%;
+
   }
 
 
@@ -664,7 +694,7 @@ footer a {
 
 /*Responsive */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 720px) {
 
   footer {
     display: flex;
