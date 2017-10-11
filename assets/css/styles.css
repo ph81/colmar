@@ -42,6 +42,8 @@ a:hover {
   text-align: center;
 }
 
+/* iPad / iPad Pro */
+
 
 
 @media only screen and (max-width: 990px) {
@@ -162,6 +164,7 @@ header .mobile {
   background-color: #e6e6e6;
   height: auto;
   width: 100%;
+
 }
 
 .jumbotron .left {
@@ -174,7 +177,7 @@ header .mobile {
 }
 
 .jumbotron img {
-  width: 777px;
+  width: 100%;
   height: auto;
 }
 
@@ -182,7 +185,7 @@ header .mobile {
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding-left: 2rem;
+  /*padding-left: 2rem; */
   text-align: center;
 }
 
@@ -191,7 +194,7 @@ header .mobile {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 70%;
+  width: 80%;
   padding-left: 24px;
   line-height: 2.5rem;
   font-weight: 700;
@@ -259,7 +262,7 @@ header .mobile {
     top: 0;
     transform: none;
     width: 100%;
-    left: -16px;
+    left: -5px;
     text-align: center;
     padding: 2rem 1rem;
     line-height: 2.5rem;
@@ -493,13 +496,13 @@ header .mobile {
     display: inline-block;
     margin: 0 0 0.5rem 1rem;
     text-transform: uppercase;
-    color: #e6e6e6;
+    color: #b3b3b3;
   }
 
   .category-courses p {
     font-size: 1rem;
     color: grey;
-    max-height: 30px;
+    height: 30px;
     margin: 0 16px 24px 16px;
   }
 
@@ -515,6 +518,17 @@ header .mobile {
   }
 
 /* Courses List - Responsive */
+
+@media only screen and (min-width: 761px) and (max-width: 1366px) {
+
+  .category-courses p {
+    font-size: 1rem;
+    color: grey;
+    height: 44px;
+    margin: 0 16px 24px 16px;
+  }
+
+}
 
   @media only screen and (max-width: 760px) {
 
@@ -711,4 +725,4 @@ header .mobile {
       display: none;
     }
 
-  }
+}
