@@ -241,12 +241,14 @@ header .mobile {
 
   /* Fix for Safari */
 
-  .jumbotron.container:before,
-  .jumbotron.container:after,
-  .jumbotron.row:before,
-  .jumbotron.row:after {
+  .jumbotron:before,
+  .jumbotron:after,
+  .jumbotron:before,
+  .jumbotron:after {
     content: normal; // IE doesn't support `initial`
   }
+
+
 
 /* Fix end */
 
