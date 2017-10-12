@@ -230,12 +230,25 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
 
+
+
   .jumbotron {
     display: flex;
     flex-wrap: wrap;
     height: auto;
     align-items: center;
   }
+
+  /* Fix for Safari */
+
+  .jumbotron.container:before,
+  .jumbotron.container:after,
+  .jumbotron.row:before,
+  .jumbotron.row:after {
+    content: normal; // IE doesn't support `initial`
+  }
+
+/* Fix end */
 
   .jumbotron img {
     width: 100%;
